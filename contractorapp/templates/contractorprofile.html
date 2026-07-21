@@ -1,0 +1,37 @@
+{% extends 'contractorbash.html' %} 
+{% load static %}
+
+
+{% block contractor %}
+
+
+<h3>Contractor Profile  </h3>
+<div class="row">
+    <div class="col-sm-4 mx-auto">
+        <div class="card shadow">
+            <div class="card-header text-center">
+                {% if contractor.picture %}
+                <img src="{{contractor.picture.url}}" alt="" height="100px" width="100px" class="border rounded-circle">
+                {% endif %}
+
+            </div>
+            <div class="card-body">
+                <h4>{{contractor.name}}</h4>
+                <p>
+                    contact No :{{contractor.contactno}}
+                    <br>
+                    Email Address :{{contractor.email}}
+                    <br>
+                    Address: {{contractor.address}}
+                    <br>
+                    Bio:{{contractor.bio}}
+                </p>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'contractoredit' %}" class="btn btn-primary">Update Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

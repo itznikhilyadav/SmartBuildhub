@@ -1,0 +1,79 @@
+{% extends 'adminbase.html' %}
+{% block admin %}
+{% load static %}
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Admin Dashboard</h4>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="container my-4">
+            <div class="row text-center">
+
+                <!-- Total Projects -->
+                 <div class="col-md-4 stretch-card grid-margin" >
+                    <div class="card text-white position-relative"
+                        style="background: linear-gradient(120deg, #c3cdca, #44c1b2); border: none; overflow: hidden;">
+
+                        <!-- Background SVG Circle -->
+                        <img src="{% static 'images/circle.1541da91.svg' %}" class="card-img-absolute" alt="circle"
+                            style="position: absolute; top: 0; right: 0; width: 158px; height: 200px; opacity: 0.9; pointer-events: none;">
+
+                        <div class="card-body position-relative">
+                            <h4 class="font-weight-normal mb-3 text-white">
+                                Total Project
+                                <i class="mdi mdi-chart-line mdi-24px float-end"></i>
+                            </h4>
+                            <h2 class="mb-4 text-white">758+</h2>
+                            <h6 class="card-text text-white">Increased by 45%</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Contractors -->
+                <div class="col-md-4 stretch-card grid-margin ">
+                    <div class="card text-white position-relative"
+                        style="background: linear-gradient(120deg, #96c0cb, #5ccaec); border: none; overflow: hidden;">
+                        <!-- Background SVG Circle -->
+                        <img src="{% static 'images/circle.1541da91.svg' %}" class="card-img-absolute" alt="circle"
+                            style="position: absolute; top: 0; right: 0; width: 158px; height: 200px; opacity: 0.9; pointer-events: none;">
+
+                        <div class="card-body position-relative">
+                            <h4 class="font-weight-normal mb-3 text-white">
+                                Active Contractor
+                                <i class="mdi mdi-chart-line mdi-24px float-end"></i>
+                            </h4>
+                            <h2 class="mb-4 text-white">250+</h2>
+                            <h6 class="card-text text-white">Increased by 12%</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 stretch-card grid-margin ">
+                    <div class="card text-white position-relative"
+                        style="background: linear-gradient(120deg, #f6b25f, #ec5ca1); border: none; overflow: hidden;">
+                        <!-- Background SVG Circle -->
+                        <img src="{% static 'images/circle.1541da91.svg' %}" class="card-img-absolute" alt="circle"
+                            style="position: absolute; top: 0; right: 0; width: 158px; height: 200px; opacity: 0.9; pointer-events: none;">
+
+                        <div class="card-body position-relative">
+                            <h4 class="font-weight-normal mb-3 text-white">
+                                Weekly Enquiries
+                                <i class="mdi mdi-chart-line mdi-24px float-end"></i>
+                            </h4>
+                            <h2 class="mb-4 text-white">150+</h2>
+                            <h6 class="card-text text-white">Increased by 60%</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+login
+{% endblock %}
+
+{% block main %}
+
+
+
+<div class="container-fluid">
+    <div class="row" id="bg-section">
+        <div class="col-sm-4 mx-auto my-auto">
+            <div class="card p-4 card01">
+                <div class="text-center">
+                    <img src="{% static 'images/logo2.png' %}" alt="" height="100px">
+                </div>
+                <h4 class="text-center fw-bold py-2" style="color: orange;"> Welcome User</h4>
+                {% if messages %}
+                {% for m in messages %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{m}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+                {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-floating mb-3">
+                        <input type="email" name="username" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" name="password" class="form-control" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-4 w-100">Login</button>
+                    <p class="mt-5">$copy;Nikhil yadav <a href="" class="float-end fw-semibold">Back to home</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

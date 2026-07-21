@@ -1,0 +1,9 @@
+.card-img-absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 120px;
+    opacity: 0.5;
+    pointer-events: none;
+}

@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Project
+{% endblock %}
+
+
+{% block main %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center " id="bg32">
+            <div class="col-sm-12">
+                <h5 class="mt-5" style="color: orange;">EXCELLENCE IN CONSTRUCTION</h5>
+                <br>
+                <h2 class="fw-bold display-5 ">Our Featured Projects</h2>
+                <h5 class="mt-5">Browse our portfolio of exceptional construction projects spanning commercial,
+                    residential, and <br>
+                    public sectors. Each project reflects our commitment to quality and innovation.</h5>
+
+
+                <div class="stats-container mt-5 ">
+                    <div class="stat-box ">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Expert Team</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+                <style>
+                    #bg32 {
+                        height: 80vh;
+                        background-image: url("{% static 'images/bgg2.jpg' %}");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+
+
+
+                    .stats-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 40px;
+                        flex-wrap: wrap;
+                    }
+
+                    .stat-box {
+                        background-color: #1a1a3d;
+                        padding: 30px 40px;
+                        width: 220px;
+                        height: 120px;
+                        border-radius: 12px;
+                        text-align: center;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                        transition: transform 0.3s;
+                    }
+
+                    .stat-box:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .stat-number {
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: #ff6600;
+                        margin-bottom: 10px;
+                    }
+
+                    .stat-label {
+                        font-size: 16px;
+                        color: #e0e0e0;
+                    }
+
+                    .image-box {
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        background-color: #000;
+                    }
+
+                    .image-box img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 1s ease;
+                    }
+
+                    .image-box:hover img {
+                        transform: scale(1.2);
+                        /* zoom-in on hover */
+                    }
+
+                    .text-overlay {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 20px;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: bold;
+                        /* Clean look – no background */
+                    }
+                </style>
+                <br>
+                <br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="background-color: #020242;">
+        <div class="container p-5">
+            <div class="row mt-5">
+                <div class="col-sm-10 text-light mt-4">
+                    <p style="color: #ff6a00;"> ---OUR PROJECTS</p>
+                    <h2 class="fw-bold">Featured Construction Projects</h2>
+                    <p class="text-secondary">Take a look at some of our most impressive projects, showcasing our
+                        commitment <br> to
+                        quality, innovation, and excellence in construction.</p>
+                    <br>
+                </div>
+                <div class="col-sm-2 mt-5">
+                    <a href="#"
+                        style="margin-left: px; border: 1px solid rgba(223, 142, 21, 0.804); padding: 12px 24px; color: rgb(223, 129, 16); border-radius: 5px; text-decoration: none;">Our
+                        Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #020242; padding: 30px 0;">
+        <div class="container  p-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/Modern-office-Complex.jpg' %}" alt="Commercial"
+                            class="image-hover" />
+                        <span class="text-overlay">Modern-office-Complex</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/luxury.jpg' %}" alt="Commercial" class="image-hover" />
+                        <span class="text-overlay">Luxury Residential Tower</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/Sustainable.jpg' %}" alt="Commercial" class="image-hover" />
+                        <span class="text-overlay">Sustainable Community Center</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/Industria.jpg' %}" alt="Commercial" class="image-hover" />
+                        <span class="text-overlay">Modern-office-Complex</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/Waterfront.jpg' %}" alt="Commercial" class="image-hover" />
+                        <span class="text-overlay">Luxury Residential Tower</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="image-box">
+                        <img src="{% static 'images/Urban.jpg' %}" alt="Commercial" class="image-hover" />
+                        <span class="text-overlay">Sustainable Community Center</span>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}

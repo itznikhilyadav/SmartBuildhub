@@ -1,0 +1,37 @@
+{% extends 'homeownerbash.html' %} 
+{% load static %}
+
+
+{% block homeowner %}
+
+
+<h3>Home Owner Profile  </h3>
+<div class="row">
+    <div class="col-sm-4 mx-auto">
+        <div class="card shadow">
+            <div class="card-header text-center">
+                {% if homeowner.picture %}
+                <img src="{{homeowner.picture.url}}" alt="" height="100px" width="100px" class="border rounded-circle">
+                {% endif %}
+
+            </div>
+            <div class="card-body">
+                <h4>{{homeowner.name}}</h4>
+                <p>
+                    contact No :{{homeowner.contactno}}
+                    <br>
+                    Email Address :{{homeowner.email}}
+                    <br>
+                    Address: {{homeowner.address}}
+                    <br>
+                    Bio:{{homeowner.bio}}
+                </p>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'homeowneredit' %}" class="btn btn-primary">Update Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

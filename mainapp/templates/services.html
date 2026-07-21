@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Services
+{% endblock %}
+
+
+{% block main %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row  text-center  p-0" id="bg211">
+        <div class="col-sm-12 mt-5">
+            <h5 class="mt-4">PROFESSIONAL CONSTRUCTION SERVICES</h5>
+            <h2 class="fw-bold mt-3 display-4 " style="color: orange;">Building <span
+                    class="text-dark">Excellence,</span> <br><span class="text-dark">Crafting</span>
+                Dreams</h2>
+            <h4 class="text-dark mt-4">We offer comprehensive construction solutions tailored to your <br> unique needs,
+                delivered with exceptional craftsmanship <br> and attention to every detail.
+            </h4>
+            <div style="margin-top: 70px;">
+                <a href="#"
+                    style="background-color: #ff6a00; padding: 12px 24px; color: white; border-radius: 5px; text-decoration: none;">Get
+                    Started</a>
+                <a href="#"
+                    style="margin-left: 15px; border: 1px solid rgb(8, 8, 8); padding: 12px 24px; color: rgb(25, 26, 26); border-radius: 5px; text-decoration: none;">Our
+                    Projects</a>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--Our Service-->
+        <div class="row text-center text-white">
+            <h5 class="mt-5" style="color: orange;">-OUR SERVICE-</h5>
+            <h2 class="fw-bold text-dark">Comprehensive Construction Solutions</h2>
+            <p class="text-dark">We offer a wide range of construction services tailored to meet the unique needs of
+                each <br>
+                project, delivered with exceptional craftsmanship and attention to detail.</p>
+        </div>
+        <div class="container mt-5 p-0">
+            <img src="{% static 'images/home (2).jpg' %}" alt="" width="900px" height="500px" class="shadow h-500;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2></h2>
+                </div>
+                <div class="col-sm-6 shadow text-bg-light pb-4 d-flex flex-wrap p-3" data-aos="zoom-in-left"
+                    data-aos-duration="3000" style="transform:translateY(-200px);">
+                    <i class="fa-solid fa-house fa-3x mx-4" style="color: orange;"></i><br>
+                    <h2 class="fw-bold mt-5 pt-2 pe-5">Residential Construction</h2>
+                    <p class="p-4">
+                        From custom homes to multi-family units, we build comfortable,
+                        energy-efficient residential spaces designed for modern living.
+                        Our expert team ensures high-quality craftsmanship with timely delivery.
+                        We turn your dream home into a lasting reality with smart design and care..</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-8 p-0">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/commercial.2.jpg' %}" class="d-block w-100" alt="..."
+                                    width="900px" height="500px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/getty.jpg' %}" class="d-block w-100" alt="..." width="900px"
+                                    height="500px">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 shadow text-bg-light pb-4 d-flex flex-wrap p-3" data-aos="zoom-in-right"
+                    data-aos-duration="3000" style="transform:translateY(-200px);">
+                    <i class="fa-solid fa-house fa-3x mx-4" style="color: orange;"></i><br>
+                    <h2 class="fw-bold mt-5 pt-2 pe-5">Commercial Buildings</h2>
+                    <p class="p-4">
+                        From custom homes to multi-family units, we build comfortable,
+                        energy-efficient residential spaces designed for modern living.
+                        Our expert team ensures high-quality craftsmanship with timely delivery.
+                        We turn your dream home into a lasting reality with smart design and care..</p>
+                </div>
+                <div class="col-sm-6">
+                    <h2></h2>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container mt-5 p-0">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/pexels.jpg' %}" class="d-block w-100" alt="..."
+                                    width="900px" height="500px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/pexels-vika.jpg' %}" class="d-block w-100" alt="..."
+                                    width="900px" height="500px">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2></h2>
+                </div>
+                <div class="col-sm-6 shadow text-bg-light pb-4 d-flex flex-wrap p-3" data-aos="zoom-in-left"
+                    data-aos-duration="3000" style="transform:translateY(-200px);">
+                    <i class="fa-solid fa-house fa-3x mx-4" style="color: orange;"></i><br>
+                    <h2 class="fw-bold mt-5 pt-2 pe-5">Interior Design</h2>
+                    <p class="p-4">
+                        Transform your space into a haven of style and comfort with our expert interior design services.
+                        We specialize
+                        in crafting personalized interiors that reflect your unique vision and lifestyle. From concept
+                        to completion,
+                        every detail is handled with creativity and precision. Let us design an environment that
+                        inspires, soothes, and
+                        delights you every day..</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-6  mt-3">
+                    <h5 class="text-warning" >FETURED SERVICE</h5>
+                    <h2 class="fw-bold">Sustainable Building Practices</h2>
+                    <p>We're committed to environmentally responsible construction. Our sustainable building practices
+                        incorporate the latest green technologies and materials to minimize environmental impact while
+                        maximizing energy efficiency and occupant comfort.</p>
+
+                    <p><span class="fw-bold">Energy Efficiency</span><br>Solar integration and passive design strategies
+                    </p>
+
+                    <p><span class="fw-bold">Water Conservation</span><br>Rainwater harvesting and low-flow fixtures</p>
+
+
+                    <p><span class="fw-bold">Recycled Materials</span><br>Responsibly sourced and eco-friendly building
+                        materials</p>
+
+                    <div style="margin-top: 30px;">
+                        <a href="#"
+                            style="background-color: #ff6a00; padding: 12px 24px; color: white; border-radius: 5px; text-decoration: none;">Learn About Our Green Intatives -></a>
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-6">
+                    <div>
+                        <img src="{% static 'images/Sustainable.jpg' %}" class="d-block w-100 shadow" alt="..."
+                            width="100px" height="450px">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>
+
+{% endblock %}
